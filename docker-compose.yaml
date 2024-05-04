@@ -2,6 +2,6 @@ version: '3.9'
 
 services:
   web:
-   image: ashfaque9x/node-todo-labapp-cicd:latest
+   image: mazen0/node-app:latest
    ports:
      - "8000:8000"
