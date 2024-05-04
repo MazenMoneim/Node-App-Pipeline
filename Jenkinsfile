@@ -24,7 +24,7 @@ pipeline {
         stage('Deploy'){
             steps {
                 sh 'sudo docker image pull mazen0/node-app:latest'
-                sh 'sudo docker run -p 8000:8000 mazen0/node-app:latest -d'
+                sh 'sudo docker run -p 8000:8000 -d mazen0/node-app:latest'
             }
         }
     }
