@@ -1,21 +1,22 @@
 # NodeJS-Todo-App
-## Overview of the porject
-* Deploy NodeJs application to save our todo-list.
-* Implementing CI/CD pipeline using Jenkins, Docker, Github-Webhooks and Docker-Hub.
-* Provisioing Jenkins server and Docker agent on aws cloud provider.
+## Project Overview
+* Deploy a Node.js application to manage our todo list.
+* Implement a CI/CD pipeline using Jenkins, Docker, GitHub Webhooks, and Docker Hub.
+* Provision Jenkins server and Docker agent on AWS cloud.
 ## Project Description
-### </> Provision two instance on aws cloud
-* First, we provisioned two instance in aws to run jenkins and docker, we used `userdata option to run script file while system is booting to install open-jdk-17 and jenkins server in the first instance, after that we used the same approche to install docker.
-* We configured secureity group on aws to allow ports like 8080 (jenkins-server-port), 50000 (jenkins-agent-port) and our application running on port 8000.
-### </> Configure Jenkins server
-* After the provisioning, we configured our webhook in both sides (Github and Jenkins) to make sure in every commit our pipeline would be estaplished.
-* Furthermore, we add our docker-server as an agent in jenkins-server, in this step we should allow security -> agents -> tcp option to make sure our connection would be estaplished.
-### </> Configure pipeline
-#####    we configured our jenkins file with four stages:
-- Code Stage: to make sure our jenkins server manipulate the events on the main branch in our repo.
-- Build and Test stage: to establish our bulid process using docker file to create our image.
-- Login and Push: to login on docker hub to push our image with specific tag.
-- Deploy: to run our application using http url.
+### </> Provisioning Instances on AWS Cloud
+* Initially, we provisioned two instances on AWS—one for running Jenkins and another for Docker.
+* We utilized the userdata option to execute a script during system boot. This script installed OpenJDK 17 and set up the Jenkins server on the first instance. Similarly, we installed Docker on the second instance.
+* Security groups were configured to allow specific ports: 8080 (Jenkins server), 50000 (Jenkins agent), and 8000 (our application).
+### </> Configuring Jenkins Server
+* After provisioning, we established webhooks between GitHub and Jenkins to trigger our pipeline on every commit.
+* Additionally, we added our Docker server as an agent in Jenkins. To ensure connectivity, we allowed the “security -> agents -> tcp” option.
+### </> Configuring the Pipeline
+#####  - Our Jenkinsfile consists of four stages:
+- Code Stage: Ensures that our Jenkins server reacts to events on the main branch of our repository.
+- Build and Test stage: Establishes our build process using a Dockerfile to create our image.
+- Login and Push: Logs in to Docker Hub and pushes our image with a specific tag.
+- Deploy: Runs our application using an HTTP URL.
   
 ####
 
