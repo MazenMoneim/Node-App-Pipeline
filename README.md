@@ -1,8 +1,12 @@
 # node-todo-app
+### Overview of the porject
+* Implementing CI/CD pipeline using Jenkins, Docker, Github-Webhooks and Docker-Hub.
+* Provisioing Jenkins server and Docker agent on aws cloud provider.
 
 
 
-![WebHook](https://github.com/MazenMoneim/node-app/assets/135109542/59f094d9-bba4-4ec1-b6e9-a648befe9f40)
+
+
 
 
 
@@ -20,9 +24,5 @@ Run these commands:
 
 `node app.js`
 
-or Run by docker compose
+![WebHook](https://github.com/MazenMoneim/node-app/assets/135109542/59f094d9-bba4-4ec1-b6e9-a648befe9f40)
 
-test 1
-test 2
-
-# node-app
