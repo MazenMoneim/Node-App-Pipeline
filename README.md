@@ -1,9 +1,9 @@
 # NodeJS-Todo-App
-## Project Overview
+## Project Overview.
 * Deploy a Node.js application to manage our todo list.
 * Implement a CI/CD pipeline using Jenkins, Docker, GitHub Webhooks, and Docker Hub.
 * Provision Jenkins server and Docker agent on AWS cloud.
-## Project Description
+## Project Description.
 ### 1- Provisioning Instances on AWS Cloud
 * Initially, we provisioned two instances on AWS—one for running Jenkins and another for Docker.
 * We utilized the userdata option to execute a script during system boot. This script installed OpenJDK 17 and set up the Jenkins server on the first instance. Similarly, we installed Docker on the second instance.
