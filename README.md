@@ -12,7 +12,7 @@
 * After provisioning, we established webhooks between GitHub and Jenkins to trigger our pipeline on every commit.
 * Additionally, we added our Docker server as an agent in Jenkins. To ensure connectivity, we allowed the “security -> agents -> tcp” option.
 ### 3- Configuring the Pipeline
-#####  -  Our Jenkinsfile consists of four stages:
+###### Our Jenkinsfile consists of four stages:
 - Code Stage: Ensures that our Jenkins server reacts to events on the main branch of our repository.
 - Build and Test stage: Establishes our build process using a Dockerfile to create our image.
 - Login and Push: Logs in to Docker Hub and pushes our image with a specific tag.
