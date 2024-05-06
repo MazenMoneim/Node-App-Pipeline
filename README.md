@@ -1,4 +1,4 @@
-# NodeJS-Todo-App
+# NodeJS-Todo-App 📌
 ## Project Overview.
 * Deploy a Node.js application to manage our todo list.
 * Implement a CI/CD pipeline using Jenkins, Docker, GitHub Webhooks, and Docker Hub.
